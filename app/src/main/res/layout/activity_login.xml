@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        tools:context=".LoginActivity">
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="40dp" app:srcCompat="@drawable/ic_vector" android:id="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="150dp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="180dp" android:layout_marginStart="180dp" app:tint="#000000"/>
+    <TextView
+            android:text="ЕДИНЫЙ АККАУНТ ДЛЯ ЛЮБОЙ СРЕДЫ NIKE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView2"
+            android:textColor="#000000" android:textStyle="bold"
+            android:textSize="26sp" android:textAlignment="center" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" android:layout_marginStart="24dp" android:layout_marginEnd="24dp"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/email"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" android:layout_marginTop="64dp"
+            android:layout_marginEnd="24dp" android:layout_marginStart="24dp" android:hint=" Адрес электронной почты"
+            android:textSize="14sp" android:background="@drawable/corner" android:textColor="@color/black"
+            android:textColorHint="#787474"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/password"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email" android:layout_marginTop="16dp"
+            android:layout_marginStart="24dp" android:layout_marginEnd="24dp" android:hint=" Пароль"
+            android:textSize="14sp" android:background="@drawable/corner" android:textColor="@color/black"
+            android:textColorHint="#787777"/>
+    <Button
+            android:text="Войти"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/login_btn"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password" android:layout_marginTop="32dp"
+            android:layout_marginStart="16dp" android:layout_marginEnd="16dp" android:backgroundTint="@color/black"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
