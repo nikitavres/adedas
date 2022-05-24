@@ -45,13 +45,17 @@ class LoginActivity : AppCompatActivity() {
             finish()
         }
         else {
-            val alert = AlertDialog.Builder(this)
-                .setTitle("Error")
-                .setMessage("У вас есть незаполненные поля")
-                .setPositiveButton("Ok", null)
-                .create()
-                .show()
+            alert("Ошибка ввода пароля или email'a")
         }
+    }
+
+    fun alert(message : String) {
+        val alert = AlertDialog.Builder(this)
+            .setTitle("Error")
+            .setMessage(message)
+            .setPositiveButton("Ok", null)
+            .create()
+            .show()
 
     }
 }
