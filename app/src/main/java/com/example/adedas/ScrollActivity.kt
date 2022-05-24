@@ -3,7 +3,6 @@ package com.example.adedas
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.MediaStore.Audio.Media
 import android.widget.MediaController
 import android.widget.VideoView
 
@@ -15,7 +14,7 @@ class ScrollActivity : AppCompatActivity() {
         val mediaController = MediaController(this)
         mediaController.setAnchorView(videoView)
 
-        val offlineUri = Uri.parse("android.resource://$packageName/${R.raw.nike_video}")
+        val offlineUri = Uri.parse("android.resource://$packageName/${R.raw.forward_nike}")
         videoView.setMediaController(mediaController)
         videoView.setVideoURI(offlineUri)
         videoView.start()
